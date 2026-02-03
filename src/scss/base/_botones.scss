@@ -1,0 +1,19 @@
+
+.boton-amarillo {
+  @include boton($amarillo, block);
+}
+
+.boton-amarillo-inline{
+  @include boton($amarillo, inline-block);
+}
+
+.boton-verde{
+  @include boton($verde, inline-block);
+  width: 100%; // móvil
+}
+
+@include tablet{
+  .boton-verde{
+    width: auto; // tablet/desktop
+  }
+}
